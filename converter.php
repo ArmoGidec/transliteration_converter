@@ -4,7 +4,7 @@ $cyrrilic = ['а', 'б', 'в', 'г', 'ғ', 'д', 'ҙ', 'е', 'ё', 'ж', 'з', '
 $latin = ['a', 'b', 'v', 'g', 'ġ', 'd', 'ẓ', 'e', 'ë', 'ž', 'z', 'i', 'j', 'k', 'ǩ', 'l', 'm', 'n', 'ņ', 'o', 'ô', 'p', 'r', 's', 'ș', 't', 'u', 'ù', 'f', 'h', 'ḥ', 'c', 'č', 'š', 'ŝ', '”', 'y', '’', 'è', 'ä', 'û', 'â', 'A', 'B', 'V', 'G', 'Ġ', 'D', 'Ẓ', 'E', 'Ë', 'Ž', 'Z', 'I', 'J', 'K', 'Ǩ', 'L', 'M', 'N', 'n͡g', 'O', 'Ô', 'P', 'R', 'S', 'Ș', 'T', 'U', 'Ù', 'F', 'H', 'Ḥ', 'C', 'Č', 'Š', 'Ŝ', '”', 'Y', '’', 'È', 'Ä', 'Û', 'Â'];
 
 //конвертер из кириллицы в латиницу
-function cyr_to_latin(string $word = null)
+function cyr_to_latin(string $word = null): string
 {
     global $cyrrilic, $latin;
     if ($word === null) {
@@ -15,7 +15,7 @@ function cyr_to_latin(string $word = null)
 }
 
 //конвертер из латиницы в кириллицу
-function latin_to_cyr(string $word = null)
+function latin_to_cyr(string $word = null): string
 {
     global $cyrrilic, $latin;
     if ($word === null) {
